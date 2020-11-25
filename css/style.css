@@ -1,0 +1,332 @@
+.logo {
+  width: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+/************ Main Header Styles ************/
+
+.kad-header {
+  background-color: #2d2e33;
+  /*header backgroung color can be replaced with color of choice*/
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.25rem;
+  position: relative;
+  height: 10vh;
+}
+
+.kad-header-logo {
+  display: inline-block;
+
+  margin: 0;
+}
+
+.kad-link {
+  text-decoration: none;
+}
+
+.kad-nav {
+  display: flex;
+  align-items: center;
+}
+
+.kad-nav-list {
+  margin: 0 300px;
+  padding-left: 0px;
+}
+
+.kad-nav-list-item {
+  list-style: none;
+  float: left;
+  padding: 0 25px;
+}
+
+.kad-list-link {
+  font-size: 18px;
+  color: rgba(9, 64, 116, 1) !important;
+  font-weight: 600;
+}
+
+.kad-list-link:hover {
+  color: #bababa;
+}
+
+.kad-menu-button {
+  display: inline-block;
+}
+
+.active {
+  border-bottom-width: 2px;
+  border-bottom: 3px solid rgba(254, 144, 0, 1);
+}
+
+/************ Extra buttons/icons at the right ************/
+
+.kad-nav-extras {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+}
+
+.kad-nav-extras .kad-nav-icons a {
+  color: rgba(9, 64, 116, 1) !important;
+  padding: 0 5px;
+  font-size: 25px;
+}
+
+.kad-nav-extras .kad-nav-icons a:hover {
+  color: #bababa;
+}
+
+/************ Mobile Header ************/
+
+@media (max-width: 982px) {
+  .kad-header {
+    display: block;
+    padding: 0px;
+  }
+
+  .kad-mobile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .kad-header-logo {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  .kad-nav {
+    display: none;
+    position: static;
+    text-align: center;
+  }
+
+  .kad-nav-extras {
+    display: block;
+    position: static;
+    padding: 2% 0;
+  }
+
+  .kad-nav-button {
+    margin: 0 0 0 0;
+  }
+
+  .kad-nav-extras .kad-nav-icons {
+    padding: 20px 5px 0;
+  }
+
+  /**** Nav Animation ****/
+
+  .toggle-kad-nav {
+    display: block;
+    padding: 0 0 20px;
+  }
+
+  .kad-nav-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .kad-nav-list-item {
+    list-style: none;
+    float: none;
+    padding: 2% 5%;
+  }
+
+  .kad-menu-bar {
+    background-color: #dedcdc;
+    width: 1.5rem;
+    height: 2px;
+    margin: 4px 0;
+    padding: 0;
+  }
+
+  /**** Menu Button Animation ****/
+
+  .hide-bar-two {
+    animation: bar-hide 1s linear forwards;
+  }
+
+  @keyframes bar-hide {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+
+    100% {
+      width: 0px;
+      height: 0px;
+    }
+  }
+
+  .cross-bar-one {
+    animation: bar-cross-left 0.5s linear forwards;
+  }
+
+  @keyframes bar-cross-left {
+    10% {
+      transform: rotate(45deg) translate(4px, 4px);
+    }
+
+    50% {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    100% {
+      transform: rotate(45deg) translate(3px, 2px);
+    }
+  }
+
+  .cross-bar-three {
+    animation: bar-cross-right 0.5s linear forwards;
+  }
+
+  @keyframes bar-cross-right {
+    10% {
+      transform: rotate(-45deg);
+    }
+
+    60% {
+      transform: rotate(-45deg) translate(-3px, 3px);
+    }
+
+    100% {
+      transform: rotate(-45deg) translate(1px, -2px);
+    }
+  }
+}
+
+/************ Transparent Header ************/
+
+.kad-header-transparent {
+  background-color: transparent;
+  color: #2d2e33;
+}
+
+.kad-header-transparent .kad-link {
+  color: #2d2e33;
+}
+
+.kad-header-transparent .kad-list-link:hover {
+  color: #6a6b70;
+}
+
+.kad-header-transparent .kad-menu-bar {
+  background-color: #2d2e33;
+}
+
+.kad-header-transparent .kad-nav-button {
+  background-color: transparent;
+  border: 1px solid #2d2e33;
+  color: #2d2e33;
+  border-radius: 100px;
+}
+
+.kad-header-transparent .kad-nav-button:hover {
+  background-color: rgb(2, 158, 2);
+  border: 1px solid rgb(2, 158, 2);
+  color: white;
+}
+
+.kad-header-transparent .kad-nav-extras .kad-nav-icons a {
+  color: grey;
+}
+
+.kad-header-transparent .kad-nav-extras .kad-nav-icons a:hover {
+  color: #2d2e33;
+}
+
+.kad-header-transparent .kad-nav-button a {
+  color: #2d2e33;
+  text-decoration: none;
+}
+
+.kad-header-transparent .kad-nav-button a:hover {
+  color: white;
+}
+
+/* Footer Styling */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 70px; /* Remember to change and adjust before final production */
+  padding: 50px 80px 70px 100px;
+  background-color: rgba(9, 64, 116, 1);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-heading-1 {
+  margin-top: 70px;
+}
+
+.copyright {
+  font-weight: 400;
+}
+
+.u-margin-right {
+  margin-right: 40px;
+}
+
+.footer--nav-list {
+  list-style: none;
+}
+
+.footer--nav-list-items {
+  margin-bottom: 20px;
+}
+
+.footer--link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.icons {
+  margin-right: 20px;
+  color: rgba(254, 144, 0, 1);
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.footer-heading {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+/* Footer Media Queries */
+@media only screen and (max-width: 510px) {
+  .footer-container {
+    display: block;
+    margin-top: 70px; /* Remember to change and adjust before final production */
+    padding: 0;
+  }
+
+  .footer--logo--box,
+  .added--info {
+    padding-left: 40px;
+    margin-top: 30px;
+  }
+
+  .footer-heading-1 {
+    margin-top: 40px;
+  }
+}
