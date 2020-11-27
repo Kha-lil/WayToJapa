@@ -3,9 +3,11 @@
   padding: 0;
 }
 
-::-webkit-scrollbar { width: 0 !important }
+::-webkit-scrollbar {
+  width: 0 !important;
+}
 
-main{
+main {
   font-family: Montserrat;
 }
 
@@ -27,13 +29,13 @@ main{
   line-height: 65px;
   color: #ffffff;
   align-self: flex-end;
-  margin: 0 0 30px 100px ;
+  margin: 0 0 30px 100px;
 }
 
 /* blog post styles */
 .blog-posts {
   padding: 2rem 5rem;
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 .blog-post-head {
@@ -141,13 +143,13 @@ main{
   margin-right: 15px;
 }
 
-.blog-post-page-nav{
+.blog-post-page-nav {
   display: flex;
   justify-content: center;
   margin: 25px 0 30px 0;
 }
 
-.blog-post-btn{
+.blog-post-btn {
   height: 50px;
   width: 50px;
   border-radius: 4px;
@@ -161,49 +163,48 @@ main{
   font-size: 30px;
 }
 
-.next-page-btn{
+.next-page-btn {
   margin-right: 20px;
 }
 
-.previous-page-btn{
+.previous-page-btn {
   margin-left: 20px;
 }
 
 /* ========= end of blog post design ========== */
 
-
 /* ========= Featured articles design =========== */
 
-.featured-articles-head{
+.featured-articles-head {
   margin-bottom: 50px;
 }
 
-.featured-articles{
+.featured-articles {
   padding: 2rem 5rem;
-  background: #EFEFFD;
+  background: #efeffd;
 }
 
-.featured-articles-container{
+.featured-articles-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.featured-article-card{
-border: 1px solid #EFEFFD;
-border-radius: 12px;
-padding: 20px;
-background: #ffffff;
-cursor: pointer;
+.featured-article-card {
+  border: 1px solid #efeffd;
+  border-radius: 12px;
+  padding: 20px;
+  background: #ffffff;
+  cursor: pointer;
 }
 
-.featured-text{
+.featured-text {
   margin-top: 5px;
   border-top: 2px solid #fe9000;
   padding-top: 7px;
   font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 20px;
-color: #0E0E2C;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0e0e2c;
 }

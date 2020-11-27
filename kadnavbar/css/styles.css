@@ -1,6 +1,6 @@
 /*============ hide scroll bar===== */
 ::-webkit-scrollbar {
-  width: 0 !important
+  width: 0 !important;
 }
 
 body {
