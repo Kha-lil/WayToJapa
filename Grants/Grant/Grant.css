@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+.container1 {
+    position: relative;
+    text-align: center;
+    filter: brightness(40%);
+    margin-top: 10px;
+    height: 386px;
+    background-image: url("Rectangle\ 71\ \(4\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+  }
+  h3{
+      margin: 0;
+  }
+  .row {
+    margin-top: 0px;
+  }
+  
+  .Grant-page {
+    padding: 2rem 5rem;
+    background: #E5E5E5;
+    margin: 0;
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 45px;
+  }
+h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    color: #ffffff;
+    align-self: flex-end;
+    margin: 0 0 30px 100px ;
+}
+#leftbox { 
+    float:left;   
+    width:25%; 
+    height:100px; 
+} 
+
+#nextbox { 
+    float:left;   
+    width:25%; 
+    height:100px; 
+} 
+#middlebox{ 
+    float:left;  
+    width:25%; 
+    height:100px; 
+} 
+#rightbox{ 
+    float:left;  
+    width:25%; 
+    height:100px; 
+}
+.column{ 
+    float:left;  
+    width:50%; 
+    display: flex;
+  } 
+  .column2{ 
+    float:left;  
+    width:25%; 
+    display: flex;
+  } 
+
+P{
+    margin: 0%;
+    display: flex;
+    font-family: "Montserrat";
+    font-weight: 400;
+    
+}
+h6{
+    float: right;
+    font-family: "Montserrat";
+}
+
+.card {
+    outline: none;
+    max-height: 223px;
+    max-width: 500px;
+    border: 2px solid #efeffd;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    padding: 20px;
+  }
+     h4{
+    border-bottom: 2px solid #fe9000;
+  }
+
+  /* .buttons{
+    display: flex;
+    justify-content: left;
+  } */
+  
+  .grant-post-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+    background: #094074;
+    border-radius: 4px;
+    transform: rotate(-180deg);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 30px;
+  }
+  
+  .next-page-btn{
+    margin-right: 50px;
+    margin-left: 520px;
+  }
+    h2{
+    border-bottom: 2px solid #fe9000;
+    padding-left: 20px;
+    margin-top: 5px;
+    padding-top: 7px;
+  font-weight: bold;
+  line-height: 25px;
+  color: #0E0E2C;
+  width: 15%;
+  }
+  
+  .latest-posts-page {
+    padding: 2rem 5rem;
+    background: #efeffd;
+    margin-top: 0;
+  }
+
+  .last-card{
+    outline: none;
+    max-height: 223px;
+    max-width: 500px;
+    border: 2px solid #efeffd;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    }
