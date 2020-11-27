@@ -265,8 +265,7 @@ body {
 /* Footer Styling */
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 70px; /* Remember to change and adjust before final production */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Remember to change and adjust before final production */
   padding: 50px 80px 70px 100px;
   background-color: rgba(9, 64, 116, 1);
   color: #fff;
