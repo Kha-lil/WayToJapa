@@ -15,51 +15,44 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
 
-    <!-- Kadet Stylesheet
-    <link rel="stylesheet" href="../kadnavbar/css/styles.css" /> -->
-
     <!-- Custom Stylesheet-->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>WayToJapa</title>
   </head>
   <body>
     <!--Navigation Section-->
-    <header class="kad-header kad-header-transparent">
-      <div class="kad-mobile-container">
-        <div class="kad-header-logo">
-          <img
-            src="../asset/images/untitled-2.png"
-            alt="Logo of WayToJapa"
-            class="logo"
-          />
-        </div>
-
-        <div class="kad-menu-button">
-          <div class="kad-menu-bar kad-menu-bar-one"></div>
-          <div class="kad-menu-bar kad-menu-bar-two"></div>
-          <div class="kad-menu-bar kad-menu-bar-three"></div>
-        </div>
+    <header class="flex row">
+      <div class="logo flex col">
+        <img
+          src="../asset/images/untitled-2.png"
+          alt="Logo of WayToJapa"
+          class="logo"
+        />
       </div>
-
-      <nav class="kad-nav">
-        <ul class="kad-nav-list">
-          <li class="kad-nav-list-item">
-            <a class="kad-link kad-list-link link" href="../Landing page/landingpage.html">Home</a>
+      <nav id="nav" class="flex row">
+        <div id="nav-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="flex row kad-nav-list">
+          <li>
+            <a class="link active" href="#">Home</a>
           </li>
-          <li class="kad-nav-list-item">
-            <a class="kad-link kad-list-link link" href="../Our-Services/our-services.html">Services</a>
+          <li>
+            <a class="link" href="../Our-Services/index.html">Services</a>
           </li>
-          <li class="kad-nav-list-item">
-            <a class="kad-link kad-list-link link" href="../Blog/blog.html">Blog</a>
+          <li>
+            <a class="link" href="#">Blog</a>
           </li>
-          <li class="kad-nav-list-item">
-            <a class="kad-link kad-list-link link" href="../About-us/about-us.html">About us</a>
+          <li>
+            <a class="link" href="#">About us</a>
           </li>
-          <li class="kad-nav-list-item">
-            <a class="kad-link kad-list-link link" href="../Contact-us/contact-us.html">Contact us</a>
+          <li>
+            <a class="link" href="#">Contact us</a>
           </li>
         </ul>
-
         <div class="kad-nav-extras">
           <div class="kad-nav-icons">
             <a href="#"><i class="fas fa-search search--button"></i></a>
@@ -67,69 +60,394 @@
         </div>
       </nav>
     </header>
-    <!--All Other Layouts go in here 👇😁-->
+
+    <!-- Showcase Section-->
+    <div class="showcase">
+      <div class="left">
+        <p class="heading-secondary">There's only one</p>
+        <br />
+        <span class="heading-sub">Way to Japa</span>
+        <p class="showcase__paragraph">Explore new Opportunities now</p>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search by Categories"
+          class="showcase__form"
+        />
+        <button type="submit" class="btn-submit">Explore</button>
+      </div>
+      <div class="right">
+        <img
+          src="../asset/images/Rectangle 95.png"
+          alt="Hero--image"
+          class="hero"
+        />
+      </div>
+    </div>
+
+    <!--Explore Section-->
+    <section class="explore">
+      <h3 class="heading-tertiary"><span>Explore by </span>Category</h3>
+      <div class="explore__grid">
+        <div class="grid">
+          <div class="icon-box">
+            <img src="asset/icons/books.svg" alt="An SVG icon" class="icon" />
+          </div>
+
+          <a href="#" class="icon-text">Scholarships</a>
+        </div>
+        <div class="grid">
+          <div class="icon-box">
+            <img
+              src="asset/icons/airplane.svg"
+              alt="An SVG icon"
+              class="icon"
+            />
+          </div>
+          <a href="#" class="icon-text">Visas</a>
+        </div>
+        <div class="grid">
+          <div class="icon-box">
+            <img
+              src="asset/icons/credit card.svg"
+              alt="An SVG icon"
+              class="icon"
+            />
+          </div>
+
+          <a href="#" class="icon-text">Grants</a>
+        </div>
+        <div class="grid">
+          <div class="icon-box">
+            <img src="asset/icons/group.svg" alt="An SVG icon" class="icon" />
+          </div>
+
+          <a href="#" class="icon-text">Jobs</a>
+        </div>
+        <div class="grid last-child">
+          <div class="icon-box">
+            <img
+              src="asset/icons/bi_award-fill.svg"
+              alt="An SVG icon"
+              class="icon"
+            />
+          </div>
+
+          <a href="#" class="icon-text">Competitions</a>
+        </div>
+      </div>
+    </section>
+    <div class="u-cover-two">
+      <!-- Trending Opportunities-->
+      <section class="trending">
+        <div class="trending-heading">
+          <h3 class="heading-tertiary"><span>Trending O</span>pportunities</h3>
+        </div>
+        <div class="trending__container">
+          <div class="trending__grid">
+            <div class="trending--typo">
+              <h4 class="heading--low">2020 African Students</h4>
+
+              <span class="heading--low__sub">Scholarships</span>
+            </div>
+
+            <a href="#" class="imaage--link">
+              <img
+                src="../asset/images/Trending Opportunities.png"
+                alt="Image of people talking"
+                class="trending--image"
+              />
+            </a>
+            <p class="trending-text">Closes in 12 days</p>
+          </div>
+          <div class="trending__grid">
+            <div class="trending--typo">
+              <h4 class="heading--low">2020 African Students</h4>
+              <span class="heading--low__sub">Scholarships</span>
+            </div>
+            <a href="#" class="imaage--link">
+              <img
+                src="../asset/images/Trending Opportunities.png"
+                alt="Image of people talking"
+                class="trending--image"
+              />
+            </a>
+            <p class="trending-text">Closes in 12 days</p>
+          </div>
+          <div class="trending__grid">
+            <div class="trending--typo">
+              <h4 class="heading--low">2020 African Students</h4>
+              <span class="heading--low__sub">Scholarships</span>
+            </div>
+            <a href="#" class="imaage--link">
+              <img
+                src="../asset/images/Trending Opportunities.png"
+                alt="Image of people talking"
+                class="trending--image"
+              />
+            </a>
+            <p class="trending-text">Closes in 12 days</p>
+          </div>
+          <div class="trending__grid">
+            <div class="trending--typo">
+              <h4 class="heading--low">2020 African Students</h4>
+              <span class="heading--low__sub">Scholarships</span>
+            </div>
+            <a href="#" class="imaage--link">
+              <img
+                src="../asset/images/Trending Opportunities.png"
+                alt="Image of people talking"
+                class="trending--image"
+              />
+            </a>
+            <p class="trending-text">Closes in 12 days</p>
+          </div>
+          <div class="trending__grid">
+            <div class="trending--typo">
+              <h4 class="heading--low">2020 African Students</h4>
+              <span class="heading--low__sub">Scholarships</span>
+            </div>
+            <a href="#" class="imaage--link">
+              <img
+                src="../asset/images/Trending Opportunities.png"
+                alt="Image of people talking"
+                class="trending--image"
+              />
+            </a>
+            <p class="trending-text">Closes in 12 days</p>
+          </div>
+          <div class="trending__grid">
+            <div class="trending--typo">
+              <h4 class="heading--low">2020 African Students</h4>
+              <span class="heading--low__sub">Scholarships</span>
+            </div>
+            <a href="#" class="imaage--link">
+              <img
+                src="../asset/images/Trending Opportunities.png"
+                alt="Image of people talking"
+                class="trending--image"
+              />
+            </a>
+            <p class="trending-text">Closes in 12 days</p>
+          </div>
+          <div class="trending__grid">
+            <div class="trending--typo">
+              <h4 class="heading--low">2020 African Students</h4>
+              <span class="heading--low__sub">Scholarships</span>
+            </div>
+            <a href="#" class="imaage--link">
+              <img
+                src="../asset/images/Trending Opportunities.png"
+                alt="Image of people talking"
+                class="trending--image"
+              />
+            </a>
+            <p class="trending-text">Closes in 12 days</p>
+          </div>
+          <div class="trending__grid">
+            <div class="trending--typo">
+              <h4 class="heading--low">2020 African Students</h4>
+              <span class="heading--low__sub">Scholarships</span>
+            </div>
+            <a href="#" class="imaage--link">
+              <img
+                src="../asset/images/Trending Opportunities.png"
+                alt="Image of people talking"
+                class="trending--image"
+              />
+            </a>
+            <p class="trending-text">Closes in 12 days</p>
+          </div>
+        </div>
+
+        <button class="button btn--seeMore btn--animated" href="#">
+          <span>See More </span>
+        </button>
+      </section>
+
+      <!--Offer Section-->
+      <section class="offer">
+        <div class="trending-heading">
+          <h3 class="heading-tertiary"><span>What We O</span>ffer</h3>
+        </div>
+
+        <div class="trending__container offer__container">
+          <div class="offer-grid grid--1">
+            <a href="#"><p class="offer-typo">CV Writing</p></a>
+          </div>
+          <div class="offer-grid grid--2">
+            <a href="#"><p class="offer-typo">Statement of Purpose</p></a>
+          </div>
+          <div class="offer-grid grid--3">
+            <a href="#"><p class="offer-typo">Carrer Consultation</p></a>
+          </div>
+          <div class="offer-grid grid--4">
+            <a href="#"><p class="offer-typo">Mock Interviews</p></a>
+          </div>
+        </div>
+        <button class="button btn--seeMore btn--animated" href="#">
+          <span>Learn More </span>
+        </button>
+      </section>
+    </div>
+
+    <div class="u-cover-three">
+      <!--Latest Post Section-->
+      <section class="latest">
+        <div class="top-grid-container">
+          <div class="left-grid">
+            <div class="latest-heading">
+              <h3 class="heading-tertiary"><span>Latest Post</span>s</h3>
+              <a href="#" class="latest-link"
+                ><span class="view">View All &#8594;</span></a
+              >
+            </div>
+
+            <div class="inner-text">
+              <h4 class="inner-heading">Getting Started in a New Field</h4>
+              <a href="#" class="imaage--link links__post">
+                <img
+                  src="../asset/images/Trending Opportunities.png"
+                  alt="Image of people talking"
+                  class="inner-logo"
+                />
+              </a>
+              <p class="inner-p">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aspernatur ex quo eum vel illo amet ab eos dicta animi vero
+                quidem sunt itaque quia, dolorum consectetur, nemo et nulla
+                ratione dolore laboriosam nostrum qui? Ipsam ratione ullam aut
+                quasi tempore eveniet corporis odit repellendus officia minima.
+                Esse maxime cupiditate laboriosam.
+              </p>
+            </div>
+          </div>
+          <div class="right-grid">
+            <h4 class="right-text">Featured Articles</h4>
+            <div class="inner-right">
+              <a href="#" class="imaage--link">
+                <img
+                  src="../asset/images/Rectangle 45 (2).png"
+                  alt="Image of people talking"
+                  class="right-logo"
+                />
+              </a>
+              <p class="p-text">5 Tips To Help You Land Your Dream Job</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Bottom Grid-->
+        <div class="grid-container hidden">
+          <div class="flex--1">
+            <div class="inner">
+              <h4 class="inner-heading">Getting Started in a New Field</h4>
+              <a href="#" class="imaage--link links__post">
+                <img
+                  src="../asset/images/Rectangle 45.png"
+                  alt="Image of people talking"
+                  class="inner-logo"
+                />
+              </a>
+              <p class="inner-p">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aspernatur ex quo eum vel illo amet ab eos dicta animi vero
+                quidem
+              </p>
+            </div>
+          </div>
+          <div class="flex--2">
+            <div class="inner">
+              <h4 class="inner-heading">Getting Started in a New Field</h4>
+              <a href="#" class="imaage--link links__post">
+                <img
+                  src="../asset/images/Rectangle 45.png"
+                  alt="Image of people talking"
+                  class="inner-logo"
+                />
+              </a>
+              <p class="inner-p">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aspernatur ex quo eum vel illo amet ab eos dicta animi vero
+                quidem
+              </p>
+            </div>
+          </div>
+          <div class="flex--3">
+            <div class="inner-right">
+              <a href="#" class="imaage--link">
+                <img
+                  src="../asset/images/Rectangle 45 (2).png"
+                  alt="Image of people talking"
+                  class="right-logo"
+                />
+              </a>
+              <p class="p-text">5 Tips To Help You Land Your Dream Job</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Partner Section-->
+      <section class="partners">
+        <p class="partner-paragraph">
+          <span>Partner :</span>
+          <img src="../asset/images/logo.png" alt="Logo of Side Histle" />
+        </p>
+      </section>
+
+      <!--Newsletter Section -->
+      <div class="newsletter">
+        <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
+        <div class="form__group">
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+            class="form__input"
+          />
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
 
     <!--Footer Section-->
-    <footer class="kad-footer">
+
+    <footer class="footer">
       <div class="footer-container">
-        <div class="footer--logo--box u-margin-right">
+        <div class="logo-box u-margin-right">
           <img
-            src="../asset/images/untitled-2.png"
+            src="../asset/images/Logo white.svg"
             alt="Logo of WayToJapa"
-            class="logo"
+            class="footer-logo"
           />
           <span
             ><img
               class="logo span--logo"
-              src="../asset/images/untitled-3.png"
+              src="../asset/images/Wordmark white.svg"
               alt="Logo of WayToJapa"
           /></span>
           <h3 class="footer-heading-1">Terms and Policy</h3>
           <p class="copyright">&copy; copyright 2020. All right reserved</p>
         </div>
-        <div class="nav--1 u-margin-right">
-          <nav class="footer--nav--1">
-            <ul class="footer--nav-list">
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Blog</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Contact us</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">About us</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">FAQs</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Partners</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="footer-nav-1 u-margin-right">
+          <a class="footer--link" href="#">Blog</a>
+          <a class="footer--link" href="#">Contact us</a>
+          <a class="footer--link" href="#">About us</a>
+          <a class="footer--link" href="#">FAQs</a>
+          <a class="footer--link" href="#">Partners</a>
         </div>
-        <div class="nav--2 u-margin-right">
-          <nav class="footer--nav--1">
-            <ul class="footer--nav-list">
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Jobs</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Scholarships</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Visa</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Competition</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Grants</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="footer--2 u-margin-right">
+          <a class="footer--link" href="#">Jobs</a>
+          <a class="footer--link" href="#">Scholarships</a>
+          <a class="footer--link" href="#">Visa</a>
+          <a class="footer--link" href="#">Competition</a>
+          <a class="footer--link" href="#">Grants</a>
         </div>
-        <div class="added--info">
+        <div class="added-info">
           <h3 class="footer-heading">Connect with us</h3>
           <div class="footer-nav-icons">
             <a href="#"><i class="fab fa-facebook-f icons"></i></a>
@@ -140,6 +458,7 @@
         </div>
       </div>
     </footer>
-    <script src="../kadnavbar/js/script.js"></script>
+
+    <script src="../Javascript/main.js"></script>
   </body>
 </html>
