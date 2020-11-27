@@ -16,7 +16,7 @@ body {
 .showcase {
   display: flex;
   flex-direction: row;
-  background-image: url(../asset/images/Rectangle\ 94.png);
+  background-image: url(../Asset/images/Rectangle\ 94.png);
   background-position: center;
   background-size: cover;
   /* background-color: rgba(0, 0, 0, 0.4); Black w/opacity/see-through*/
