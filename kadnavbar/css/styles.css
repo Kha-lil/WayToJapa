@@ -23,6 +23,7 @@ body {
   padding: 1.25rem;
   position: relative;
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+  box-sizing: unset!important;
 }
 
 .kad-header-logo {
