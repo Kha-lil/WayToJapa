@@ -1,0 +1,111 @@
+::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: Montserrat;
+}
+.contact-text-rafiki {
+  background: #e5e5e5;
+  padding-bottom: 50px;
+}
+.container {
+  max-width: 65%;
+  margin: auto;
+}
+
+.header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #094074;
+}
+
+.text-and-rafiki {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  max-width: 350px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #282828;
+}
+
+.contact-form-section {
+  background: #efeffd;
+}
+
+.contact-form {
+  width: 85%;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px 3px rgba(229, 229, 229, 0.3);
+  border-radius: 6px;
+  position: relative;
+  bottom: 117px;
+}
+
+#email {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  background: #ffffff;
+  outline: none;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+}
+
+#message {
+  height: 220px;
+  width: 100%;
+  padding-left: 10px;
+  background: #ffffff;
+  outline: none;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+}
+
+.check {
+  margin-top: 30px;
+}
+
+#checkbox {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 2px;
+}
+
+.checkbox-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+  margin-left: 10px;
+}
+
+.send {
+  margin-top: 30px;
+  color: white;
+  border: none;
+  outline: none;
+  width: 130px;
+  height: 40px;
+  background: #094074;
+  border-radius: 4px;
+}
