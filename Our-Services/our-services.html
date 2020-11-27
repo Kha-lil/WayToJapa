@@ -15,51 +15,44 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
 
-    <!-- Kadet Stylesheet
-    <link rel="stylesheet" href="../kadnavbar/css/styles.css" /> -->
-
     <!-- Custom Stylesheet-->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>WayToJapa</title>
   </head>
   <body>
     <!--Navigation Section-->
-    <header class="kad-header kad-header-transparent">
-      <div class="kad-mobile-container">
-        <div class="kad-header-logo">
-          <img
-            src="../asset/images/untitled-2.png"
-            alt="Logo of WayToJapa"
-            class="logo"
-          />
-        </div>
-
-        <div class="kad-menu-button">
-          <div class="kad-menu-bar kad-menu-bar-one"></div>
-          <div class="kad-menu-bar kad-menu-bar-two"></div>
-          <div class="kad-menu-bar kad-menu-bar-three"></div>
-        </div>
+    <header class="flex row">
+      <div class="logo flex col">
+        <img
+          src="../asset/images/untitled-2.png"
+          alt="Logo of WayToJapa"
+          class="logo"
+        />
       </div>
-
-      <nav class="kad-nav">
-        <ul class="kad-nav-list">
-          <li class="kad-nav-list-item">
-            <a class="kad-link kad-list-link link" href="../Landing page/landingpage.html">Home</a>
+      <nav id="nav" class="flex row">
+        <div id="nav-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="flex row kad-nav-list">
+          <li>
+            <a class="link" href="../Landing page/landingpage.html">Home</a>
           </li>
-          <li class="kad-nav-list-item">
-            <a class="kad-link kad-list-link link" href="../Our-Services/our-services.html">Services</a>
+          <li>
+            <a class="link active" href="#">Services</a>
           </li>
-          <li class="kad-nav-list-item">
-            <a class="kad-link kad-list-link link" href="../Blog/blog.html">Blog</a>
+          <li>
+            <a class="link" href="../Blog/blog.html">Blog</a>
           </li>
-          <li class="kad-nav-list-item">
-            <a class="kad-link kad-list-link link" href="../About-us/about-us.html">About us</a>
+          <li>
+            <a class="link" href="../About-us/about-us.html">About us</a>
           </li>
-          <li class="kad-nav-list-item">
-            <a class="kad-link kad-list-link link" href="../Contact-us/contact-us.html">Contact us</a>
+          <li>
+            <a class="link" href="../Contact-us/contact-us.html">Contact us</a>
           </li>
         </ul>
-
         <div class="kad-nav-extras">
           <div class="kad-nav-icons">
             <a href="#"><i class="fas fa-search search--button"></i></a>
@@ -67,69 +60,192 @@
         </div>
       </nav>
     </header>
-    <!--All Other Layouts go in here 👇😁-->
+
+    <!-- Showcase Section -->
+    <div class="backdrop">
+      <section class="showcase">
+        <div class="showcase__text-box">
+          <h2 class="showcase-heading">What We Offer</h2>
+        </div>
+      </section>
+    </div>
+
+    <!--Info Section-->
+    <section class="info">
+      <div class="info-container">
+        <div class="left">
+          <h3 class="heading-tertiary">Get the best out of your career</h3>
+          <p class="info-paragraph">
+            In auctor facilisi lacus cursus. Morbi fusce id orci at tristique
+            imperdiet consectetur. Viverra mattis mattis curabitur ultrices
+            accumsan pharetra nunc. Risus rhoncus ut in nunc. Tempus erat nulla
+            at tempus. Eu ultrices et rhoncus, posuere ut id. Tincidunt cras dui
+            orci ipsum nibh nulla nulla pellentesque. Consequat, dui nisi, mi,
+            aliquam pellentesque suspendisse pharetra aliquam. Sed ut vitae
+            pretium id. Commodo est urna, egestas et est. Diam vel mauris semper
+            sit. Blandit consectetur iaculis sapien velit. In auctor facilisi
+            lacus cursus. Morbi fusce id orci at tristique imperdiet
+            consectetur. Viverra mattis mattis curabitur ultrices accumsan
+            pharetra nunc. Risus rhoncus ut in nunc. Tempus erat nulla at
+            tempus. Eu ultrices et rhoncus, posuere ut id. Tincidunt cras dui
+            orci ipsum nibh nulla nulla pellentesque. Consequat, dui nisi, mi,
+            aliquam pellentesque suspendisse pharetra aliquam. Sed ut vitae
+            pretium id. Commodo est urna, egestas et est. Diam vel mauris semper
+            sit. Blandit consectetur iaculis sapien velit.
+          </p>
+        </div>
+        <div class="right">
+          <img
+            src="asset/images/Rectangle 64.png"
+            alt="An Image of looking forward"
+            class="info-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Services Section-->
+    <section class="services service">
+      <div class="container services-box">
+        <div class="cv-writing card">
+          <h4 class="heading-small">CV Writing</h4>
+          <img
+            src="asset/images/Copy of Rectangle 45 (1).png"
+            alt="Image of us writing your cv"
+          />
+          <p class="services-paragraph cv">
+            Get a top class CV written for you by seasoned professionals
+          </p>
+          <div class="price-v">
+            <p class="price">N10, 000.00</p>
+            <button class="btn-card btn--animated" href="#">Get Now!</button>
+          </div>
+        </div>
+        <div class="statement card">
+          <h4 class="heading-small">Statement of Purpose</h4>
+          <img
+            src="asset/images/Copy of Rectangle 100.png"
+            alt="Image of us discussing about your statement of purpose"
+          />
+          <p class="services-paragraph purpose">
+            Your desire to work in a top firm depends on how well you
+            communicate your goals and aspirations.
+          </p>
+          <div class="price-v">
+            <p class="price">N10, 000.00</p>
+            <button class="btn-card btn--animated" href="#">Get Now!</button>
+          </div>
+        </div>
+        <div class="carrer card">
+          <h4 class="heading-small">Career Consultation</h4>
+          <img
+            src="asset/images/Copy of Rectangle 101.png"
+            alt="Image of us discussing about your carrer"
+          />
+          <p class="services-paragraph consult">
+            Climbing the ladder in any given career is not as difficult as it
+            seems especially when you have access to professional advice
+          </p>
+          <div class="price-v">
+            <p class="price">N10, 000.00</p>
+            <button class="btn-card btn--animated" href="#">Get Now!</button>
+          </div>
+        </div>
+        <div class="mock card">
+          <h4 class="heading-small">Mock Interview</h4>
+          <img
+            src="asset/images/Copy of Rectangle 102.png"
+            alt="Image of us writing your cv"
+          />
+          <p class="services-paragraph">
+            Take your performance during your next interview to a whole new
+            level. Remember, practice makes perfect
+          </p>
+          <div class="price-v">
+            <p class="price">N10, 000.00</p>
+            <button class="btn-card btn--animated" href="#">Get Now!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section-->
+    <div class="u-cover-two">
+      <section class="packages">
+        <div class="container packages-box">
+          <div class="grid col-3">
+            <h4 class="heading-small">Basic Package</h4>
+            <p class="price">N10, 000.00</p>
+            <p class="packages-paragraph">Professional CV writing</p>
+            <p class="packages-paragraph">Cover letter</p>
+            <button class="btn-card btn--animated" href="#">Purchase</button>
+          </div>
+          <div class="middle col-3">
+            <p class="middle-paragraph">
+              Save cash by purchasing our discounted packages
+            </p>
+          </div>
+          <div class="grid col-3 gold">
+            <h4 class="heading-small">Gold Package</h4>
+            <p class="price">N20, 000.00</p>
+            <p class="packages-paragraph">Professional CV writing</p>
+            <p class="packages-paragraph">Cover letter</p>
+            <p class="packages-paragraph">Statement of Purpose</p>
+            <button class="btn-card btn--animated" href="#">Purchase</button>
+          </div>
+        </div>
+      </section>
+
+      <!--Newsletter Section -->
+      <div class="newsletter">
+        <h3 class="newsletter-heading">Subscribe to Our Newsletter</h3>
+        <div class="form__group">
+          <label for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+            class="form__input"
+          />
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
 
     <!--Footer Section-->
-    <footer class="kad-footer">
+    <footer class="footer">
       <div class="footer-container">
-        <div class="footer--logo--box u-margin-right">
+        <div class="logo-box u-margin-right">
           <img
-            src="../asset/images/untitled-2.png"
+            src="../asset/images/Logo white.svg"
             alt="Logo of WayToJapa"
-            class="logo"
+            class="footer-logo"
           />
           <span
             ><img
               class="logo span--logo"
-              src="../asset/images/untitled-3.png"
+              src="../asset/images/Wordmark white.svg"
               alt="Logo of WayToJapa"
           /></span>
           <h3 class="footer-heading-1">Terms and Policy</h3>
           <p class="copyright">&copy; copyright 2020. All right reserved</p>
         </div>
-        <div class="nav--1 u-margin-right">
-          <nav class="footer--nav--1">
-            <ul class="footer--nav-list">
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Blog</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Contact us</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">About us</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">FAQs</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Partners</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="footer-nav-1 u-margin-right">
+          <a class="footer--link" href="#">Blog</a>
+          <a class="footer--link" href="#">Contact us</a>
+          <a class="footer--link" href="#">About us</a>
+          <a class="footer--link" href="#">FAQs</a>
+          <a class="footer--link" href="#">Partners</a>
         </div>
-        <div class="nav--2 u-margin-right">
-          <nav class="footer--nav--1">
-            <ul class="footer--nav-list">
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Jobs</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Scholarships</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Visa</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Competition</a>
-              </li>
-              <li class="footer--nav-list-items">
-                <a class="footer--link" href="#">Grants</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="footer--2 u-margin-right">
+          <a class="footer--link" href="#">Jobs</a>
+          <a class="footer--link" href="#">Scholarships</a>
+          <a class="footer--link" href="#">Visa</a>
+          <a class="footer--link" href="#">Competition</a>
+          <a class="footer--link" href="#">Grants</a>
         </div>
-        <div class="added--info">
+        <div class="added-info">
           <h3 class="footer-heading">Connect with us</h3>
           <div class="footer-nav-icons">
             <a href="#"><i class="fab fa-facebook-f icons"></i></a>
@@ -140,6 +256,7 @@
         </div>
       </div>
     </footer>
-    <script src="../kadnavbar/js/script.js"></script>
+
+    <script src="../Javascript/main.js"></script>
   </body>
 </html>
